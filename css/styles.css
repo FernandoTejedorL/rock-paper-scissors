@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 img {
@@ -29,5 +30,34 @@ ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-image: radial-gradient(#1f3757, #131537);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mainscreen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.take-to {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+.main-headers {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
 }
