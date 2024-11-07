@@ -13,10 +13,42 @@
     <title>Rock, paper, scissors</title>
   </head>
   <body>
-    <main>
-      <div id="scoreboard" class="scoreboard"></div>
-      <div id="buttons" class="buttons"></div>
-      <button>RULES</button>
+    <main class="simple-main">
+      <div id="scoreboard" class="scoreboard">
+        <div class="scorecard">
+          <div class="score">
+            <span class="top-score">SCORE</span>
+            <span class="real-score">0</span>
+          </div>
+        </div>
+        <img class="logo" src="../assets/images/logo.svg" alt="" />
+        <div class="scorecard">
+          <div class="score">
+            <span class="top-score">SCORE</span>
+            <span class="real-score">0</span>
+          </div>
+        </div>
+      </div>
+      <div id="buttons" class="buttons-box">
+        <div class="top-buttons">
+          <div class="button-back blue">
+            <div class="button">
+              <img src="../assets/images/icon-paper.svg" alt="" />
+            </div>
+          </div>
+          <div class="button-back orange">
+            <div class="button">
+              <img src="../assets/images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="button-back red">
+          <div class="button">
+            <img src="../assets/images/icon-rock.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <input type="button" class="to-modal" value="RULES"></input>
     </main>
     <div id="modal"></div>
     <script src="../js/scripts.js"></script>
