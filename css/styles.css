@@ -38,8 +38,18 @@ body {
 
 .mainscreen {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
   align-items: center;
+}
+
+@media screen and (width>768px) {
+  .mainscreen {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25vh;
+  }
 }
 
 .take-to {
@@ -65,6 +75,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 32px;
+}
+
+@media screen and (width>768px) {
+  .simple-main {
+    margin-top: 48px;
+  }
 }
 
 .scoreboard {
@@ -261,11 +277,56 @@ body {
   margin: 105px 0 52px;
 }
 
+.top-buttons-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+  width: 325px;
+  height: 182px;
+  color: white;
+  font-weight: 700;
+  font-size: 15;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@media screen and (width>768px) {
+  .top-buttons-result {
+    width: 658px;
+    height: 395px;
+    font-size: 24px;
+  }
+}
+
+.text-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: center;
+  width: 325px;
+  height: 182px;
+}
+
+@media screen and (width>768px) {
+  .text-selection {
+    flex-direction: column-reverse;
+    width: 293px;
+    height: 395px;
+  }
+}
+
 .empty-result {
   height: 110px;
   width: 110px;
   border-radius: 50%;
   background-color: #131537;
+}
+
+@media screen and (width>768px) {
+  .empty-result {
+    height: 225px;
+    width: 225px;
+  }
 }
 
 .win-or-loose {
@@ -308,10 +369,19 @@ body {
   border: solid 1px white;
 }
 
+@media screen and (width>768px) {
+  .to-modal {
+    position: absolute;
+    top: 724px;
+    left: 85%;
+  }
+}
+
 .modal-simple {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 538px;
   position: fixed;
   top: 0;
   left: 0;
@@ -319,6 +389,10 @@ body {
   height: 100vh;
   padding: 95px 35px;
   background-color: white;
+  background-image: url(../assets/images/image-rules.svg);
+  background-position: center 240px;
+  background-size: 305px 271px;
+  background-repeat: no-repeat;
   transition: scale 0.3s;
   font-size: 32px;
   line-height: 32px;
@@ -327,9 +401,54 @@ body {
   scale: 0;
 }
 
-.modal-simple-rules {
-  width: 305px;
-  height: 271px;
-  margin-top: 113px;
-  margin-bottom: 154px;
+@media screen and (width>768px) {
+  .modal-simple-dsk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 538px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(31, 55, 87, 0.253),
+      rgba(19, 21, 55, 0.253)
+    );
+    transition: scale 0.3s;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #3b4262;
+    scale: 0;
+  }
+}
+
+@media screen and (width>768px) {
+  .modal-simple {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0;
+    position: relative;
+    top: 30%;
+    width: 400px;
+    height: 415px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: white;
+    background-image: url(../assets/images/image-rules.svg);
+    background-position: center 112px;
+    background-size: 305px 271px;
+    background-repeat: no-repeat;
+    transition: scale 0.3s;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #3b4262;
+    scale: 0;
+  }
 }
