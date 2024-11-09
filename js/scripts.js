@@ -1,6 +1,7 @@
 const rootStyles = document.documentElement.style;
 const ownScoreElement = document.getElementById('own-score');
 const houseScoreElement = document.getElementById('house-score');
+const allButtonsElement = document.getElementById('buttons');
 const buttonPaperElement = document.getElementById('button-paper');
 const buttonScissorsElement = document.getElementById('button-scissors');
 const buttonRockElement = document.getElementById('button-rock');
@@ -13,11 +14,16 @@ const hideRulesElement = document.getElementById('hide-rules');
 const rulesElement = document.getElementById('modal-simple')
 
 const openRules = () => {
-    rulesElement.classList.replace('hiderules', 'showrules');
+    rulesElement.classList.replace('hide', 'show');
 }
 showRulesElement.addEventListener('click', openRules)
 
 const closeRules = () => {
-    rulesElement.classList.replace('showrules', 'hiderules');
+    rulesElement.classList.replace('show', 'hide');
 }
 hideRulesElement.addEventListener('click', closeRules)
+
+const checkbutton = event => {
+}
+
+allButtonsElement.addEventListener('click', checkbutton)

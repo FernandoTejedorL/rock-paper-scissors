@@ -365,6 +365,8 @@ body {
 
 .to-modal {
   align-self: center;
+  position: absolute;
+  top: 654px;
   background-color: #13153700;
   color: white;
   font-size: 16px;
@@ -406,12 +408,16 @@ body {
   font-weight: 700;
   color: #3b4262;
 }
+/*
+.hidediv {
+  display: none;
+}*/
 
-.hiderules {
+.hide {
   scale: 0;
 }
 
-.showrules {
+.show {
   scale: 1;
 }
 
