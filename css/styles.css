@@ -292,7 +292,7 @@ body {
 
 @media screen and (width>768px) {
   .top-buttons-result {
-    width: 658px;
+    width: 938px;
     height: 395px;
     font-size: 24px;
   }
@@ -338,6 +338,13 @@ body {
   height: 131px;
 }
 
+@media screen and (width>768px) {
+  .win-or-loose {
+    position: absolute;
+    top: 180px;
+  }
+}
+
 .win-or-loose-txt {
   font-size: 56px;
   font-weight: 700;
@@ -372,7 +379,7 @@ body {
 @media screen and (width>768px) {
   .to-modal {
     position: absolute;
-    top: 724px;
+    top: 85%;
     left: 85%;
   }
 }
@@ -398,32 +405,14 @@ body {
   line-height: 32px;
   font-weight: 700;
   color: #3b4262;
+}
+
+.hiderules {
   scale: 0;
 }
 
-@media screen and (width>768px) {
-  .modal-simple-dsk {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 538px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(31, 55, 87, 0.253),
-      rgba(19, 21, 55, 0.253)
-    );
-    transition: scale 0.3s;
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 700;
-    color: #3b4262;
-    scale: 0;
-  }
+.showrules {
+  scale: 1;
 }
 
 @media screen and (width>768px) {
@@ -433,8 +422,9 @@ body {
     justify-content: space-between;
     align-items: baseline;
     gap: 0;
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 200px;
+    left: 40%;
     width: 400px;
     height: 415px;
     padding: 32px;
@@ -449,6 +439,6 @@ body {
     line-height: 32px;
     font-weight: 700;
     color: #3b4262;
-    scale: 0;
+    box-shadow: 0 0 0 3000px rgba(19, 21, 55, 0.781);
   }
 }

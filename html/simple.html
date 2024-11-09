@@ -18,57 +18,52 @@
         <div class="scorecard">
           <div class="score">
             <span class="top-score">SCORE</span>
-            <span class="real-score">0</span>
+            <span id="own-score" class="real-score">0</span>
           </div>
         </div>
         <img class="logo" src="../assets/images/logo.svg" alt="" />
         <div class="scorecard">
           <div class="score">
             <span class="top-score">SCORE</span>
-            <span class="real-score">0</span>
+            <span id="house-score" class="real-score">0</span>
           </div>
         </div>
       </div>
       <div id="buttons" class="buttons-box">
         <div class="top-buttons">
-          <div class="button-back blue">
-            <button class="button paper"></button>
-          </div>
-          <div class="button-back orange">
-            <button class="button scissors"></button>
-          </div>
+          <button id="button-paper" class="button paper"></button>
+          <button id="button-scissors" class="button scissors"></button>
         </div>
-        <div class="button-back red">
-          <button class="button rock"></button>
-        </div>
+        <button id="button-rock" class="button rock"></button>
       </div>
       <div class="result">
         <div class="top-buttons-result">
           <div class="text-selection">
-            <div class="empty-result"></div>
+            <div id="own-selection" class="empty-result"></div>
             <span>YOU PICKED</span>
           </div>
           <div class="text-selection">
-            <div class="empty-result"></div>
+            <div id="house-selection" class="empty-result"></div>
             <span>THE HOUSE PICKED</span>
           </div>
         </div>
         <div class="win-or-loose">
-          <span class="win-or-loose-txt">YOU WIN</span>
-          <button class="win-or-loose-button">PLAY AGAIN</button>
+          <span id="win-or-loose" class="win-or-loose-txt">YOU WIN</span>
+          <button id="play-again" class="win-or-loose-button">
+            PLAY AGAIN
+          </button>
         </div>
       </div>
-      <button class="to-modal">RULES</button>
+      <button id="show-rules" class="to-modal">RULES</button>
     </main>
-    <div class="modal-simple-dsk">
-      <div id="modal-simple" class="modal-simple">
-        <span class="modal-simple-txt">RULES</span>
-        <img
-          class="modal-simple-close"
-          src="../assets/images/icon-close.svg"
-          alt=""
-        />
-      </div>
+    <div id="modal-simple" class="modal-simple hiderules">
+      <span class="modal-simple-txt">RULES</span>
+      <img
+        id="hide-rules"
+        class="modal-simple-close"
+        src="../assets/images/icon-close.svg"
+        alt=""
+      />
     </div>
     <script src="../js/scripts.js"></script>
   </body>
