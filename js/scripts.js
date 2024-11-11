@@ -16,7 +16,6 @@ const rulesElement = document.getElementById('modal-simple');
 const houseChoiceElement = {
     children: [
         {
-            children: [],
             classList: ['button', 'paper'],
         },
         {
@@ -28,10 +27,8 @@ const houseChoiceElement = {
     ]
 }
 
-
 let ownScore = 0;
 let houseScore = 0;
-
 const addChoiceClasses = event => {
     const classButton = event.target.classList[0];
     const classButtonChoice = event.target.classList[1];
@@ -79,9 +76,9 @@ playAgainElement.addEventListener('click', restart)
 const openRules = () => {
     rulesElement.classList.replace('hide', 'show');
 }
-showRulesElement.addEventListener('click', openRules)
+showRulesElement.addEventListener('click', openRules);
 
 const closeRules = () => {
     rulesElement.classList.replace('show', 'hide');
 }
-hideRulesElement.addEventListener('click', closeRules)
+hideRulesElement.addEventListener('click', closeRules);
